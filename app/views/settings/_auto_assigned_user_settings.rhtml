@@ -1,0 +1,19 @@
+    <%-
+      roles = Role.all(:order => "position ASC")
+      selected = @settings['client_roles'].collect(&:to_i) unless @settings['client_roles'].blank?
+      selected ||= []
+    -%>
+
+<p><%= content_tag(:label, l(:label_project_manager_role)) %><%=
+      select_tag("settings[project_manager_role]",
+                 content_tag(:option, '') + options_from_collection_for_select(roles, :id, :name, @settings['project_manager_role'].to_i ),
+                 :multiple => false,
+                 :size => 1)
+    %></p>
+
+<p><%= content_tag(:label, l(:label_client_roles)) %><%=
+      select_tag("settings[client_roles]",
+                 content_tag(:option, '') + options_from_collection_for_select(roles, :id, :name, selected ),
+                 :multiple => true,
+                 :size => 5)
+    %></p>

@@ -1,3 +1,5 @@
 # English strings go here for Rails i18n
 en:
   my_label: "My label"
+  label_project_manager_role: "Project manager role"
+  label_client_roles: "Client roles"
