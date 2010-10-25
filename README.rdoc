@@ -1,3 +1,3 @@
-= auto_assigned_user
+= auto assigned user
 
-Description goes here
+If an user forget to assign the issue, this plugin will auto-assign to the project manager.
