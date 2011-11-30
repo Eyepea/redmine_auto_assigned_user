@@ -1,0 +1,5 @@
+# English strings go here for Rails i18n
+cs:
+  my_label: "Můj popis"
+  label_project_manager_role: "Role projektového manažera"
+  label_client_roles: "Role klientů"
