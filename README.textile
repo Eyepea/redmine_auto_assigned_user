@@ -1,0 +1,15 @@
+h1. auto assigned user
+
+If an user don't assign the issue to somebody when the issue is created, this plugin will auto-assign to the project manager.
+This plugin is used for our clients who forget to assign a new issue. 
+
+h2. How to install ?
+
+Follow the "Redmine documentation":http://www.redmine.org/projects/redmine/wiki/Plugins to install the plugin.
+
+h2. How to use ?
+
+# Go to the settings page: /settings/plugin/redmine_auto_assigned_user
+# Define the project manager role. The first member of this role in your project will be used to assign the issue.
+# Select the client roles. The plugin fills the *assign to* field if only the creator of the issue is member in the role list. With this parameter, the support team can create an issue without an assignation.
+# In each project, assign a project manager and a client role.
