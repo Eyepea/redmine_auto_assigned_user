@@ -1,0 +1,4 @@
+# English strings go here for Rails i18n
+fr:
+  label_project_manager_role: "Rôle gestionnaire de projet"
+  label_client_roles: "Rôles clients"
